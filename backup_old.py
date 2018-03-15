@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+#Code taken from github previous year's team that was successful, will make changes to algorithm once i've tested
 import rospy
 import actionlib
 import tf
@@ -28,10 +28,10 @@ from sensor_msgs.msg import Joy
 
 # Counterclockwise safe:
 waypoints = [
-    [(6.29, -1.80, 0.0), (0.0, 0.0, 0.63, 0.78)],
-    [(6.31, 1.23, 0.0), (0.0, 0.0, 0.99, 0.09)],
-    [(0.63, 1.43, 0.0), (0.0, 0.0, -0.78, 0.62)],
-    [(0.49, -1.39, 0.0), (0.0, 0.0, -0.17, 0.98)]
+    [(-1.5, -1.80, 0.0), (0.0, 0.0, 0.35, 0.95)],
+    [(-.4, -0.5, 0.0), (0.0, 0.0, 0.60, 0.83)],
+    [(4.85, 1.33, 0.0), (0.0, 0.0, .25, 1.0)],
+    [(4.5, 3.6, 0.0), (0.0, 0.0, .85, 0.55)]
 ]
 
 
