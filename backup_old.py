@@ -28,10 +28,10 @@ from sensor_msgs.msg import Joy
 
 # Counterclockwise safe:
 waypoints = [
-    [(-1.5, -1.80, 0.0), (0.0, 0.0, 0.35, 0.95)],
-    [(-.4, -0.5, 0.0), (0.0, 0.0, 0.60, 0.83)],
-    [(4.85, 1.33, 0.0), (0.0, 0.0, .25, 1.0)],
-    [(4.5, 3.6, 0.0), (0.0, 0.0, .85, 0.55)]
+    [(0, 0, 0.0), (0.0, 0.0, 0.5, 0.5)],
+    [(0, 0, 0.0), (0.0, 0.0, 0.5, 0)],
+    [(0, 0, 0.0), (0.0, 0.0, 0, 0)],
+    [(0, 0, 0.0), (0.0, 0.0, 0, 0)]
 ]
 
 
@@ -76,9 +76,11 @@ if __name__ == '__main__':
     client.wait_for_result()
 
     print 'ready'
+    
+    '''
     while not running:
         pass
-    
+    '''
     while True:
     # for _ in range(3):
         for pose in waypoints:
